@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Anniversary, Riyu 💖</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    .slideshow {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .slideshow img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      animation: bgfade 25s infinite;
+    }
+
+    .slideshow img:nth-child(1) { animation-delay: 0s; }
+    .slideshow img:nth-child(2) { animation-delay: 5s; }
+    .slideshow img:nth-child(3) { animation-delay: 10s; }
+    .slideshow img:nth-child(4) { animation-delay: 15s; }
+    .slideshow img:nth-child(5) { animation-delay: 20s; }
+
+    @keyframes bgfade {
+      0% { opacity: 1; }
+      18% { opacity: 1; }
+      25% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    .content {
+      background-color: rgba(255, 182, 193, 0.3);
+      padding: 20px;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff3399;
+      margin-bottom: 10px;
+    }
+
+    .hearts {
+      font-size: 2em;
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+
+    .message-box {
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      max-width: 850px;
+      margin: 0 auto 30px;
+      padding: 20px;
+      border-radius: 20px;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .typing {
+      white-space: pre-line;
+      overflow: hidden;
+      border-right: 3px solid #ff3399;
+      animation: typing 10s steps(100, end), blink 1s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    video {
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      max-width: 100%;
+      margin: 30px auto;
+      display: block;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .message-box {
+        font-size: 1em;
+        padding: 15px;
+      }
+
+      .gallery img {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slideshow Background -->
+  <div class="slideshow">
+    <img src="bg1.jpg" alt="">
+    <img src="bg2.jpg" alt="">
+    <img src="bg3.jpg" alt="">
+    <img src="bg4.jpg" alt="">
+    <img src="bg5.jpg" alt="">
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <h1>Happy Anniversary Babe 💕</h1>
+    <div class="hearts">💖 💗 💞 💘 ❤️</div>
+
+    <div class="message-box">
+      <div class="typing">
+Hello Love,
+
+Finally it's our anniversary babe. This one is so special for me —
+I don't even have words to put it together, and I know you must be as excited as I am.
+
+What a time it has been with you, babe. That's what we call an actual journey.
+Every moment I spend with you is so pure — I just want it to never end.
+
+After all that happened, here we are again — together, stronger and better.
+To be dead honest with you babe, I actually thought we would never be able to do it again.
+But here we are.
+
+I LOVE YOU SO MUCH RIYU 💘
+
+HAPPY ANNIVERSARY BABE 💖
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <video controls>
+      <source src="anniversary.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Photo Gallery -->
+    <div class="gallery">
+      <img src="photo1.jpg" alt="">
+      <img src="photo2.jpg" alt="">
+      <img src="photo3.jpg" alt="">
+      <img src="photo4.jpg" alt="">
+      <img src="photo5.jpg" alt="">
+      <img src="photo6.jpg" alt="">
+      <img src="photo7.jpg" alt="">
+      <img src="photo8.jpg" alt="">
+    </div>
+  </div>
+
+</body>
+</html>
